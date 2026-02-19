@@ -20,9 +20,7 @@ html {
 aside {
   float: right;
   width: 260px;
-  padding-right: 0;
   margin-top: 40px;
-
 }
 
 aside h1 {
@@ -67,10 +65,11 @@ aside a:hover {
   font-family: "Mochiy Pop One", sans-serif;
 }
 
-.container {
+/*.center {
   width: 90%;
   max-width: 1200px;
 }
+*/
 
 .flex {
   display: flex;
