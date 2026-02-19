@@ -302,8 +302,8 @@ li a:hover img {
 .flex-left {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .column-2 {
@@ -315,8 +315,8 @@ li a:hover img {
 .concept-img,
 .concept-img-left {
   background-size: cover;
-  height: 340px;
-  /* 高さ調整 */
+  background-position: center;
+  height: 320px;
   border-radius: 20px;
 }
 
@@ -663,11 +663,13 @@ section img {
     text-align: center;
   }
   .flex-left {
-    flex-direction: row !important;
+    display: flex;
+    justify-content: space-between;
     align-items: flex-start;
+    flex-wrap: wrap;
     gap: 12px;
   }
-
+  
   #concept-left .column-2 {
     width: 50% !important;
   }
