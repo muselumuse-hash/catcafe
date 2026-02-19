@@ -77,9 +77,8 @@ aside a:hover {
 .flex {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   align-items: center;
-
+  gap: 20px;
 }
 
 nav ul li {
@@ -190,6 +189,7 @@ li a:hover img {
   width: 48%;
   line-height: 2em;
   font-size: 20px;
+  flex: 1;
 }
 
 .kominnka {
@@ -401,10 +401,6 @@ li a:hover img {
   height: auto;
   /* 画像の高さが自動で調整される */
 }
-
-
-
-
 
 
 /*sns*/
@@ -679,4 +675,13 @@ section img {
   .concept-img-left {
     height: 220px;
   }
+  .flex {
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+  }
+  
+  .column-2 {
+    width: 50% !important;
+  }
+  
 }
