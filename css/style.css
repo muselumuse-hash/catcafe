@@ -666,5 +666,17 @@ section img {
     margin: 0 !important;
     text-align: center;
   }
+  .flex-left {
+    flex-direction: row !important;
+    align-items: flex-start;
+    gap: 12px;
+  }
 
+  #concept-left .column-2 {
+    width: 50% !important;
+  }
+
+  .concept-img-left {
+    height: 220px;
+  }
 }
