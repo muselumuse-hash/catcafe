@@ -690,6 +690,27 @@ header .flex {
     /* 各アイテムが容器の約半分の幅を取る */
   }
 
+  /* ===== スマホ：ヘッダーを縦並びにする ===== */
+
+header .flex {
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ロゴの下に余白 */
+.logo {
+  margin-bottom: 16px;
+}
+
+/* メニューをロゴの下に */
+.header_menu {
+  width: 100%;
+  display: grid !important;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+
   /* ===== スマホメニュー最終強制上書き ===== */
 
   .header_menu {
