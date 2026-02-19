@@ -78,6 +78,11 @@ aside a:hover {
   gap: 20px;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 nav ul li {
   list-style-type: none;
 }
@@ -105,6 +110,22 @@ header {
 .header_menu li a:hover {
   color: #80BA4a;
 }
+
+header .flex {
+  flex-wrap: nowrap !important;
+}
+
+.header_menu img {
+  width: 100px;
+  height: auto;
+}
+/* ===== heroサイズ安定パッチ ===== */
+
+#hero {
+  height: clamp(260px, 40vw, 520px);
+}
+
+
 
 li a img {
   transition: opacity 0.3s ease-in-out;
@@ -185,7 +206,7 @@ li a:hover img {
 .column-2 {
   width: 48%;
   line-height: 2em;
-  font-size: 20px;
+  font-size: 15px;
   flex: 1;
 }
 
@@ -275,10 +296,8 @@ li a:hover img {
   display: block;
   border-radius: 50% / 25%;
   object-fit: cover;
-  width: 30%;
+  width: 100%;
   height: 100%;
-  position: absolute;
-  z-index: 1;
 }
 
 .links a:hover {
@@ -289,7 +308,7 @@ li a:hover img {
 .container {
   width: 90%;
   /* 親コンテナの幅を〇%に設定 */
-  max-width: none;
+  max-width: 1200px;
   /* 最大幅の制限を解除 */
   margin: 0 auto;
   position: relative;
@@ -303,11 +322,7 @@ li a:hover img {
   flex-wrap: wrap;
 }
 
-.column-2 {
-  width: 48%;
-  line-height: 2em;
-  font-size: 15px;
-}
+
 
 .concept-img,
 .concept-img-left {
@@ -501,6 +516,37 @@ section img {
   margin-left: 100px;
 }
 
+/* ===== 画像はみ出し防止 ===== */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ===== ヘッダー横並び固定 ===== */
+header .flex {
+  flex-wrap: nowrap !important;
+}
+
+/* ===== メニュー画像サイズ安定 ===== */
+.header_menu img {
+  width: 100px;
+  height: auto;
+}
+
+/* ===== ヘッダーメニューを常に横並びに固定 ===== */
+
+header .flex {
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+}
+
+.header_menu {
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 30px;
+}
+
+
 /*@メディアクエリ*/
 @media screen and (max-width: 480px) {
 
@@ -556,6 +602,11 @@ section img {
   #hero {
     height: 240px;
   }
+
+  #hero::before {
+    position: absolute
+  }
+
 
   .hero_inner p {
     font-size: 14px;
@@ -623,9 +674,6 @@ section img {
 
   }
 
-  .pop-plan img {
-    width: 120%;
-  }
 
   #toppage {
     margin-right: 15px;
@@ -650,15 +698,17 @@ section img {
     gap: 14px;
     width: 100%;
   }
+
   .header_menu.flex {
     display: grid !important;
     grid-template-columns: 1fr 1fr !important;
   }
-  
+
   .header_menu li {
     margin: 0 !important;
     text-align: center;
   }
+
   .flex-left {
     display: flex;
     justify-content: space-between;
@@ -666,7 +716,7 @@ section img {
     flex-wrap: wrap;
     gap: 12px;
   }
-  
+
   #concept-left .column-2 {
     width: 50% !important;
   }
@@ -674,13 +724,14 @@ section img {
   .concept-img-left {
     height: 220px;
   }
+
   .flex {
     flex-direction: row !important;
     flex-wrap: nowrap !important;
   }
-  
+
   .column-2 {
     width: 50% !important;
   }
-  
+
 }
