@@ -4,26 +4,28 @@
 @import url(common.css);
 
 
-html{
+html {
   font-family: "Noto Sans JP", sans-serif;
 }
 
 
-  /*パンくずリスト*/
-.page ol li{
+/*パンくずリスト*/
+.page ol li {
   display: inline;
   margin-right: 5px;
   font-size: 80%;
 }
+
 /*アサイドの所*/
-aside{
+aside {
   float: none;
   padding-right: 0px;
   margin-top: 40px;
   max-width: 100px;
 
 }
-aside h1{
+
+aside h1 {
   font-size: 140%;
   border-bottom: 2px dotted #80BA4a;
   padding-left: 60px;
@@ -31,15 +33,18 @@ aside h1{
   margin: 0;
 
 }
-aside li{
-border-bottom: 1px dotted #80BA4a;
-list-style-type: none;
+
+aside li {
+  border-bottom: 1px dotted #80BA4a;
+  list-style-type: none;
 
 }
-aside ul{
+
+aside ul {
   margin: 0;
 }
-aside a{
+
+aside a {
   font-size: 110%;
   display: block;
   text-decoration: none;
@@ -47,25 +52,29 @@ aside a{
   padding-bottom: 10px;
   padding-left: 5px;
 }
-aside a:hover{
+
+aside a:hover {
   background-color: rgb(247, 199, 240);
 }
 
 
 
 /* font-family: 'Danding Script' , cursive;*/
- 
- 
 
- .pop{font-family: "Mochiy Pop One", sans-serif;}
- 
-.container{
+
+
+.pop {
+  font-family: "Mochiy Pop One", sans-serif;
+}
+
+.container {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
 }
-.flex{
+
+.flex {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -73,46 +82,53 @@ aside a:hover{
 
 }
 
- nav ul li{
+nav ul li {
   list-style-type: none;
 }
 
 /*ヘッダー*/
-header{
-padding: 2px 0;
+header {
+  padding: 2px 0;
 }
 
-.logo{
+.logo {
   font-size: 24px;
   font-weight: 700;
   letter-spacing: -0.04em;
 }
- .logo span{
+
+.logo span {
   color: pink;
- }
-.header_menu li{
-margin-left: 30px;
+}
+
+.header_menu li {
+  margin-left: 30px;
 
 }
 
-.header_menu li a:hover{
+.header_menu li a:hover {
   color: #80BA4a;
 }
 
 li a img {
-  transition: opacity 0.3s ease-in-out; /* トランジションでアニメーションを滑らかにします */
+  transition: opacity 0.3s ease-in-out;
+  /* トランジションでアニメーションを滑らかにします */
 }
+
 li a:hover img {
-  opacity: 0.8; /* ホバー時の透明度を指定します */
+  opacity: 0.8;
+  /* ホバー時の透明度を指定します */
 }
 
 /*メイン*/
 #hero {
   background-image: url(../images/topga1.png);
   background-position: center;
-  background-size: cover; /* 画像全体に表示 */
+  background-size: cover;
+  /* 画像全体に表示 */
   height: 540px;
-  width: 90%; /* 横幅を画面いっぱいに設定 */
+  width: 90%;
+  /* 横幅を画面いっぱいに設定 */
   border-radius: 30px;
   display: flex;
   align-items: center;
@@ -120,7 +136,7 @@ li a:hover img {
   overflow: hidden;
 }
 
-#hero::before{
+#hero::before {
   content: '';
   width: 100%;
   height: 100%;
@@ -131,7 +147,8 @@ li a:hover img {
   opacity: 0.2;
   z-index: 1;
 }
-.hero_inner{
+
+.hero_inner {
   z-index: 2;
   color: #ec2020;
   width: 100%;
@@ -139,58 +156,68 @@ li a:hover img {
   background-color: #fff;
   opacity: 0.5;
 }
-.hero_inner p{
+
+.hero_inner p {
   font-size: 20px;
   font-weight: 500;
   margin-bottom: 16px;
 }
-.hero_inner h1{
+
+.hero_inner h1 {
   font-size: 32px;
   font-weight: 700;
 }
+
 /*コンセプト右*/
-#concept{
-margin-bottom: 120px;
+#concept {
+  margin-bottom: 120px;
 }
-.title{
+
+.title {
   font-size: 20px;
   font-weight: 500;
   color: pink;
   margin-bottom: 40px;
 }
-#concept h3{
+
+#concept h3 {
   font-size: 36px;
   font-weight: 700;
   margin-bottom: 60px;
 }
-.column-2{
-width: 48%;
-line-height: 2em;
-font-size: 20px;
+
+.column-2 {
+  width: 48%;
+  line-height: 2em;
+  font-size: 20px;
 }
 
-.kominnka{
+.kominnka {
   font-family: "Darumadrop One", sans-serif;
   font-weight: 700px;
   font-size: 60px;
   color: red;
 }
 
-.columu-2_strong{
-color: red;
+.columu-2_strong {
+  color: red;
 }
-.text{
+
+.text {
   line-height: 2;
 }
-.concept-img{
+
+.concept-img {
   background-image: url(../images/topga1.png);
   background-position: center;
-  background-size: cover; /*画像全体に表示*/
+  background-size: cover;
+  /*画像全体に表示*/
   height: 340px;
   border-radius: 20px;
 
 }
-.heading{
+
+.heading {
   font-family: 'Dancing Script', cursive;
   font-size: 200px;
   font-weight: 700;
@@ -202,7 +229,8 @@ color: red;
   transform: translateY(-20%);
   z-index: -1;
 }
-.heading-bottom{
+
+.heading-bottom {
   font-family: 'Dancing Script', cursive;
   font-size: 200px;
   font-weight: 700;
@@ -214,7 +242,8 @@ color: red;
   transform: translateY(20%);
   z-index: -1;
 }
-.heading-bottom2{
+
+.heading-bottom2 {
   font-family: 'Dancing Script', cursive;
   font-size: 200px;
   font-weight: 700;
@@ -226,6 +255,7 @@ color: red;
   transform: translateY(20%);
   z-index: -1;
 }
+
 /*メインの下の画像*/
 .links {
   display: flex;
@@ -238,10 +268,12 @@ color: red;
   position: relative;
   opacity: 0.5;
 }
+
 .links a {
   display: block;
   flex: 1 1 auto;
 }
+
 .links a img {
   display: block;
   border-radius: 50% / 25%;
@@ -251,16 +283,21 @@ color: red;
   position: absolute;
   z-index: 1;
 }
+
 .links a:hover {
   flex-grow: 4;
   transition: flex-grow 0.4s ease-in-out;
 }
+
 .container {
-  width: 90%; /* 親コンテナの幅を〇%に設定 */
-  max-width: none; /* 最大幅の制限を解除 */
+  width: 90%;
+  /* 親コンテナの幅を〇%に設定 */
+  max-width: none;
+  /* 最大幅の制限を解除 */
   margin: 0 auto;
   position: relative;
 }
+
 /* flex-left コンテナ左*/
 .flex-left {
   display: flex;
@@ -268,15 +305,18 @@ color: red;
   flex-wrap: wrap;
   align-items: center;
 }
+
 .column-2 {
   width: 48%;
   line-height: 2em;
   font-size: 15px;
 }
 
-.concept-img, .concept-img-left {
+.concept-img,
+.concept-img-left {
   background-size: cover;
-  height: 340px; /* 高さ調整 */
+  height: 340px;
+  /* 高さ調整 */
   border-radius: 20px;
 }
 
@@ -284,19 +324,23 @@ color: red;
   background-image: url(../images/topga1.png);
   background-position: center;
 }
+
 .concept-img-left {
-  background-image: url(../images/topga1.png); /* 左側の画像*/
+  background-image: url(../images/topga1.png);
+  /* 左側の画像*/
   background-position: center;
   margin-bottom: 100px;
 }
 
 .concept-img-right {
   background-size: cover;
-  height: 340px; /* 高さ調整 */
+  height: 340px;
+  /* 高さ調整 */
   border-radius: 20px;
   background-position: center;
 }
-.heading2{
+
+.heading2 {
   font-family: 'Dancing Script', cursive;
   font-size: 200px;
   font-weight: 700;
@@ -309,9 +353,10 @@ color: red;
   z-index: -1;
 
 }
+
 .text-right {
   text-align: right;
-  margin-right: 40px ;
+  margin-right: 40px;
 }
 
 .kominnka2 {
@@ -332,21 +377,29 @@ color: red;
 */
 .yokoimg {
   display: flex;
-  flex-wrap: wrap; /* 項目が多い場合は折り返す */
-  justify-content: space-around; /* アイテム間のスペースを均等にする */
-  list-style-type: none; /* リストマーカーを非表示にする */
-  padding-left: 90px; /* デフォルトのパディングを削除する */
+  flex-wrap: wrap;
+  /* 項目が多い場合は折り返す */
+  justify-content: space-around;
+  /* アイテム間のスペースを均等にする */
+  list-style-type: none;
+  /* リストマーカーを非表示にする */
+  padding-left: 90px;
+  /* デフォルトのパディングを削除する */
 }
 
 .yokoimg li {
   margin-bottom: 10px;
-  margin-left: 0px; /* アイテム間に余白を設定 */
-  flex-basis: 25%; /* 各アイテムが容器の約半分の幅を取る */
+  margin-left: 0px;
+  /* アイテム間に余白を設定 */
+  flex-basis: 25%;
+  /* 各アイテムが容器の約半分の幅を取る */
 }
 
 .yokoimg img {
-  width: 90%; /* 画像がリストアイテムの幅に合わせて伸縮 */
-  height: auto; /* 画像の高さが自動で調整される */
+  width: 90%;
+  /* 画像がリストアイテムの幅に合わせて伸縮 */
+  height: auto;
+  /* 画像の高さが自動で調整される */
 }
 
 
@@ -355,42 +408,46 @@ color: red;
 
 
 /*sns*/
-.sns{
+.sns {
   display: block;
   margin-left: 30px;
   padding-left: 30px;
   padding-top: 30px;
 }
-.sns li{
+
+.sns li {
   float: left;
-padding-left: 30px;
+  padding-left: 30px;
 }
+
 /*会社概要*/
-.con-box h3{
-  border-bottom:1px dotted pink;
-  border-left:15px solid #92f0c4;
+.con-box h3 {
+  border-bottom: 1px dotted pink;
+  border-left: 15px solid #92f0c4;
 }
-.con-box h2{
-  border-bottom:1px dotted pink;
-  border-left:15px solid #92f0c4;
-  }
- .con-box{
+
+.con-box h2 {
+  border-bottom: 1px dotted pink;
+  border-left: 15px solid #92f0c4;
+}
+
+.con-box {
   padding-left: 100px;
   padding-top: 100px;
- }
+}
 
 /*フッター*/
 
-#toppage{
-text-align-last: right;
-padding-left: 10px;
-margin-right: 100px;
-margin-bottom: 2px;
-clear: both;
+#toppage {
+  text-align-last: right;
+  padding-left: 10px;
+  margin-right: 100px;
+  margin-bottom: 2px;
+  clear: both;
 
 }
 
-#boder{
+#boder {
   border-bottom: 2px solid pink;
 }
 
@@ -400,56 +457,67 @@ clear: both;
   text-decoration: center;
 
 }
-#copyright{
+
+#copyright {
   text-align: center;
   margin-right: 30px;
 }
-footer{
+
+footer {
   clear: both;
 }
 
 /*ここは紹介*/
-.con-box h1{
-  border-left:15px solid #92f0c4 ;
+.con-box h1 {
+  border-left: 15px solid #92f0c4;
   padding-left: 15px;
-  }
-  section img {
-   max-width: 100%;
-  }
-  .con-box{
-    float: left;
-    margin-left: 300px;
-  }
-  .center {
-   margin: 0 auto 0 auto;
-   max-width: 90%;
-   width: 500px;
-  }
-  .center ul {
-   display: flex;
-   margin: 0;
-   padding: 0;
-   list-style-type: none;
-  }
-  .center ul li {
-   flex: 1 1 auto;
-   margin-right: 8px;
-  }
-  .center ul li:last-of-type {
-   margin-right: 0;
-  }
-  .img_comment{
-    margin-left: 100px;
-  }
+}
+
+section img {
+  max-width: 100%;
+}
+
+.con-box {
+  float: left;
+  margin-left: 300px;
+}
+
+.center {
+  margin: 0 auto 0 auto;
+  max-width: 90%;
+  width: 500px;
+}
+
+.center ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.center ul li {
+  flex: 1 1 auto;
+  margin-right: 8px;
+}
+
+.center ul li:last-of-type {
+  margin-right: 0;
+}
+
+.img_comment {
+  margin-left: 100px;
+}
 
 /*@メディアクエリ*/
 @media screen and (max-width: 480px) {
-   /* コンテナの幅を100%に設定し、余白を1remに設定 */
+
+  /* コンテナの幅を100%に設定し、余白を1remに設定 */
   .container {
     width: 100%;
     padding: 1rem;
   }
- /* フレックス方向を列に変更し、アイテムを左揃えに設定 */
+
+  /* フレックス方向を列に変更し、アイテムを左揃えに設定 */
   .flex {
     flex-direction: column;
     align-items: flex-start;
@@ -461,29 +529,29 @@ footer{
     gap: 12px;
     width: 100%;
   }
-  
+
   .header_menu li {
     margin: 0;
     text-align: center;
     background: #ffffff;
     border-radius: 16px;
     padding: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.12);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
   }
-  
+
   .header_menu a {
     display: block;
     font-size: 14px;
   }
-  
+
   .header_menu img {
     width: 70px !important;
     height: auto;
     display: block;
     margin: 0 auto 6px;
   }
-  
-/*ヘッダーメニューをフレックスボックスレイアウトに変更。
+
+  /*ヘッダーメニューをフレックスボックスレイアウトに変更。
 メニュー項目を縦方向に並べます。
 メニュー項目を左揃えにします。
 これにより、スマホサイズではヘッダーメニューが縦に並び、
@@ -499,80 +567,104 @@ footer{
   .hero_inner p {
     font-size: 14px;
   }
-  .con-box h1{
-    border-left:15px solid #92f0c4 ;
+
+  .con-box h1 {
+    border-left: 15px solid #92f0c4;
     padding-left: 15px;
-    }
-    section img {
-     max-width: 50%;
-    }
-  .con-box{
+  }
+
+  section img {
+    max-width: 50%;
+  }
+
+  .con-box {
     float: none;
     margin-left: 0;
   }
-  .container{
+
+  .container {
     width: 90%;
     max-width: 1220px;
     margin: 0 auto;
     position: relative;
   }
-  .flex{
+
+  .flex {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-  
+
   }
-  
 
 
-  }/*メディアクエリ480閉じ*/
 
-  
-  @media screen and (max-width: 600px) {
+}
 
-  .con-box{
+/*メディアクエリ480閉じ*/
+
+
+@media screen and (max-width: 600px) {
+
+  .con-box {
     float: none;
     margin-left: 0;
     width: 70%;
     padding-left: 50px;
     padding-top: 5px;
   }
-  .container{
+
+  .container {
     width: 90%;
     max-width: 1220px;
     margin: 0 auto;
     position: relative;
   }
-  .flex{
+
+  .flex {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
     margin-left: 0;
-  
+
   }
-  .pop-plan img{
+
+  .pop-plan img {
     width: 120%;
   }
-  #toppage{
+
+  #toppage {
     margin-right: 15px;
     padding-top: 10px;
   }
+
   /*インデックスの４つの箱*/
-  
+
   .yokoimg li {
     margin-bottom: 10px;
-    padding-left: 0px; /* アイテム間に余白を設定 */
-    flex-basis: 50%; /* 各アイテムが容器の約半分の幅を取る */
-  }
-  
-  
-
-
-
-
-
-
+    padding-left: 0px;
+    /* アイテム間に余白を設定 */
+    flex-basis: 50%;
+    /* 各アイテムが容器の約半分の幅を取る */
   }
 
+  /* ===== スマホメニュー最終強制上書き ===== */
+
+  .header_menu {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 14px;
+    width: 100%;
+  }
+  .header_menu.flex {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+  }
+  
+  .header_menu li {
+    margin: 0 !important;
+    text-align: center;
+  }
+
+}
