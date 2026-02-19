@@ -18,10 +18,10 @@ html {
 
 /*アサイドの所*/
 aside {
-  float: none;
-  padding-right: 0px;
+  float: right;
+  width: 260px;
+  padding-right: 0;
   margin-top: 40px;
-  max-width: 100px;
 
 }
 
@@ -70,8 +70,6 @@ aside a:hover {
 .container {
   width: 90%;
   max-width: 1200px;
-  margin: 0 auto;
-  position: relative;
 }
 
 .flex {
