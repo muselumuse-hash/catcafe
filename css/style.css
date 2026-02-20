@@ -65,14 +65,6 @@ aside a:hover {
   font-family: "Mochiy Pop One", sans-serif;
 }
 
-.hero-img {
-  width: 100%;
-  height: auto;
-  border-radius: 30px;
-  display: block;
-  margin-bottom: 10px;
-}
-
 /*.center {
   width: 90%;
   max-width: 1200px;
@@ -347,7 +339,7 @@ li a:hover img {
   background-image: url(../images/topga1.png);
   /* 左側の画像*/
   background-position: center;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 
 .concept-img-right {
@@ -553,7 +545,7 @@ header .flex {
 }
 
 
-/*@メディアクエリ480*/
+/*@メディアクエリ*/
 @media screen and (max-width: 480px) {
 
   /* コンテナの幅を100%に設定し、余白を1remに設定 */
