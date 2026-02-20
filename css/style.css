@@ -65,6 +65,14 @@ aside a:hover {
   font-family: "Mochiy Pop One", sans-serif;
 }
 
+.hero-img {
+  width: 100%;
+  height: auto;
+  border-radius: 30px;
+  display: block;
+  margin-bottom: 10px;
+}
+
 /*.center {
   width: 90%;
   max-width: 1200px;
@@ -137,7 +145,6 @@ li a:hover img {
 
 /*メイン*/
 #hero {
-  background-image: url(../images/topga1.png);
   background-position: center;
   background-size: cover;
   /* 画像全体に表示 */
@@ -339,7 +346,7 @@ li a:hover img {
   background-image: url(../images/topga1.png);
   /* 左側の画像*/
   background-position: center;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .concept-img-right {
@@ -545,7 +552,7 @@ header .flex {
 }
 
 
-/*@メディアクエリ*/
+/*@メディアクエリ480*/
 @media screen and (max-width: 480px) {
 
   /* コンテナの幅を100%に設定し、余白を1remに設定 */
@@ -616,7 +623,8 @@ header .flex {
   }
 
   section img {
-    max-width: 50%;
+    max-width: 100%;
+    height: auto;
   }
 
   .con-box {
