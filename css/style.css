@@ -145,6 +145,7 @@ li a:hover img {
 
 /*メイン*/
 #hero {
+  background-image: url(../images/topga1.png);
   background-position: center;
   background-size: cover;
   /* 画像全体に表示 */
@@ -623,8 +624,7 @@ header .flex {
   }
 
   section img {
-    max-width: 100%;
-    height: auto;
+    max-width: 50%;
   }
 
   .con-box {
