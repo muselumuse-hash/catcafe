@@ -566,7 +566,12 @@ header .flex {
   gap: 30px;
 }
 
-
+.concept-img{
+  background-image: url(../images/topga1.png) !important;
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+}
 
 
 /*@メディアクエリ４８０*/
