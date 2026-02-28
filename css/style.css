@@ -865,6 +865,17 @@ footer {
   list-style: none;
 }
 
+  /* ===== フッターメニューだけ左寄せ ===== */
+
+#footer-map{
+  text-align: left;
+  width: 92%;
+  margin: 0 auto;
+}
+
+#footer-map p{
+  margin: 8px 0;
+}
 
 }
 
