@@ -923,7 +923,7 @@ aside h1{
 }
 
    .thumb {
-    width: 120px;   /* ← 好きな大きさに変更OK */
+    width: 200px;   /* ← 好きな大きさに変更OK */
     height: auto;
   }
 
