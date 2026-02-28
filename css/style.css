@@ -573,6 +573,10 @@ header .flex {
   height: 250px;
 }
 
+#concept .concept-img{
+  height: 320px !important;
+}
+
 
 /*@メディアクエリ４８０*/
 @media screen and (max-width: 480px) {
