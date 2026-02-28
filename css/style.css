@@ -839,6 +839,18 @@ header .flex {
   margin-top: 30px;
 }
 
+  /* SNSアイコン中央寄せ */
+.sns ul{
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+}
+
+.sns li{
+  list-style: none;
+  margin: 0 10px;  /* アイコン同士の間隔 */
+}
+
 }
 
 /*メディアクエリ660閉じ*/
