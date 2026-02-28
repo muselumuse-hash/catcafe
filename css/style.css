@@ -513,7 +513,7 @@ section img {
 .center {
   margin: 0 auto 0 auto;
   max-width: 90%;
-  width: 500px;
+  width: 100%;
 }
 
 .center ul {
