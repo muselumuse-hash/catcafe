@@ -924,17 +924,18 @@ aside h1{
     height: auto;
   }
 
-#concept .flex{
-    flex-direction: row !important;   /* 横並びに戻す */
+ #concept .flex{
+    flex-direction: row !important;   /* 上だけ横並びに戻す */
   }
 
   #concept .column-2{
-    width: 50% !important;           /* 半分ずつ */
+    width: 50% !important;
   }
 
-  .concept-img{
-    height: 250px;
+  #concept .concept-img{
+    height: 250px !important;   /* ← これ重要 */
   }
+
   
 }
   /*メディアクエリ660閉じ*/
