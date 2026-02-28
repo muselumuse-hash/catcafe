@@ -815,6 +815,29 @@ header .flex {
 .con-box.pop-plan img{
   margin-bottom: 40px;   /* 画像と次の要素の間を広げる */
 }
+  /* プライバシーポリシー スマホ用 */
+
+.company-page .con-box{
+  float: none;
+  width: 92%;
+  margin: 0 auto;
+  padding: 20px 4%;
+  padding-left: 0 !important;
+}
+
+/* 文章が端にくっつかないように */
+.company-page .con-box p{
+  line-height: 1.8;
+}
+
+/* 見出しの余白 */
+.company-page .con-box h1{
+  margin-bottom: 30px;
+}
+
+.company-page .con-box h2{
+  margin-top: 30px;
+}
 
 }
 
