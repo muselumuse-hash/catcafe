@@ -797,7 +797,6 @@ header .flex {
   float: none;
   width: 92%;
   margin: 0 auto;
-  margin-top: 30px;
   padding: 20px 4%;
   padding-left: 0 !important;
 }
@@ -806,6 +805,15 @@ header .flex {
 .con-box.pop-plan img{
   width: 100% !important;
   height: auto;
+}
+  /* 料金ページ：スマホ余白調整 */
+
+.con-box.pop-plan h1{
+  margin-bottom: 30px;   /* 見出しと1枚目画像の間を広げる */
+}
+
+.con-box.pop-plan img{
+  margin-bottom: 40px;   /* 画像と次の要素の間を広げる */
 }
 
 }
