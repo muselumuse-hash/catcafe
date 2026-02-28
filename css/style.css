@@ -791,7 +791,21 @@ header .flex {
       margin-top: 60px;
       width: 90%;
     }
+/* 料金ページ スマホ用 */
 
+.con-box.pop-plan{
+  float: none;
+  width: 92%;
+  margin: 0 auto;
+  padding: 20px 4%;
+  padding-left: 0 !important;
+}
+
+/* 画像を画面幅に合わせる */
+.con-box.pop-plan img{
+  width: 100% !important;
+  height: auto;
+}
 
 }
 
