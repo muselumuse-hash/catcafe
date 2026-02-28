@@ -877,6 +877,30 @@ footer {
   margin: 8px 0;
 }
 
+  /* ===== ご案内アイコン整列 ===== */
+
+aside ul{
+  padding: 0;
+}
+
+aside li{
+  list-style: none;
+  margin: 12px 0;
+}
+
+aside li a{
+  display: flex;              /* 横並びにする */
+  align-items: center;        /* 縦中央揃え */
+  gap: 10px;                  /* 画像と文字の間隔 */
+  text-decoration: none;
+}
+
+aside li img{
+  width: 30px;
+  height: 30px;
+  display: block;             /* 余計なズレ防止 */
+}
+
 }
 
 /*メディアクエリ660閉じ*/
