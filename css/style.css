@@ -922,6 +922,11 @@ aside h1{
   text-align: center;
 }
 
+   .thumb {
+    width: 120px;   /* ← 好きな大きさに変更OK */
+    height: auto;
+  }
+
 }
 
 /*メディアクエリ660閉じ*/
