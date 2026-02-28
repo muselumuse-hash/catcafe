@@ -55,10 +55,18 @@ aside a:hover {
   background-color: rgb(247, 199, 240);
 }
 
-/* PC版 肉球サイズ */
+/* ===== PC版 ご案内アイコン整列 ===== */
+
+aside li a{
+  display: flex;
+  align-items: center;   /* 縦中央揃え */
+  gap: 10px;             /* 画像と文字の間 */
+}
+
 aside li img{
   width: 30px;
-  height: auto;
+  flex-shrink: 0;        /* 画像サイズ固定 */
+  display: block;
 }
 
 
