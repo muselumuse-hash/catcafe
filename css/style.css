@@ -552,6 +552,11 @@ header .flex {
   gap: 30px;
 }
 
+aside li img{
+  width: 30px;
+  height: 30px;
+}
+
 
 /*@メディアクエリ*/
 @media screen and (max-width: 480px) {
