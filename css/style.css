@@ -780,7 +780,7 @@ header .flex {
       float: none;
       margin: 0　auto;
       width: 90%;
-      padding-left: 0;
+      padding-left: 50px;
     }
   
     .company-page aside{
