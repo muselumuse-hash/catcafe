@@ -778,8 +778,9 @@ header .flex {
 
     .company-page .con-box{
       float: none;
-      margin-left: 0;
-      width: 50%;
+      margin: 0　auto;
+      width: 90%;
+      padding-left: 0;
     }
   
     .company-page aside{
