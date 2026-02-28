@@ -788,38 +788,7 @@ header .flex {
       margin-top: 40px;
       width: 100%;
     }
-  @media screen and (max-width: 600px) {
 
-  /* フォーム全体を少しコンパクトに */
-  .company-page .con-box {
-    width: 92%;
-    margin: 0 auto;
-  }
-
-  /* 文字サイズを少し下げる */
-  .company-page form {
-    font-size: 0.9rem;
-  }
-
-  /* 入力欄を画面幅に収める */
-  .company-page input,
-  .company-page select,
-  .company-page textarea {
-    width: 100%;
-    box-sizing: border-box;
-  }
-
-  /* textareaの固定幅対策 */
-  .company-page textarea {
-    resize: vertical;
-  }
-
-  /* 送信ボタンを小さく */
-  .company-page button img {
-    width: 200px;
-  }
-
-  
 
 }
 
