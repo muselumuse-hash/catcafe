@@ -839,27 +839,32 @@ header .flex {
   margin-top: 30px;
 }
 
-  /* ===== スマホ：SNS完全中央 ===== */
+/* ===== スマホ：SNS完全中央 ===== */
 
-.sns{
-  margin: 30px auto 0 auto;   /* ← 左右autoで中央 */
-  padding: 0;
+footer {
   text-align: center;
 }
 
-.sns ul{
-  display: flex;
-  justify-content: center;
+.sns {
+  width: 100%;
+  margin: 30px auto;
+  padding: 0 !important;
+}
+
+.sns ul {
+  display: flex !important;
+  justify-content: center !important;
   align-items: center;
+  gap: 20px;
   padding: 0;
   margin: 0;
 }
 
-.sns li{
+.sns li {
   float: none !important;
   list-style: none;
-  margin: 0 12px;
 }
+
 
 }
 
