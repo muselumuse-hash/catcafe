@@ -937,10 +937,20 @@ aside h1{
     height: auto;
   }
 
+   section ul {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .thumb {
+    width: 30%;
+    height: auto;
+  }
   
 
 }
 
   /* ===== スマホ用 ===== （メディアクエリ768閉じ）*/
 
-/*メディアクエリ660閉じ*/
+
