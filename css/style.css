@@ -569,7 +569,7 @@ header .flex {
 
 
 
-/*@メディアクエリ*/
+/*@メディアクエリ４８０*/
 @media screen and (max-width: 480px) {
 
   /* コンテナの幅を100%に設定し、余白を1remに設定 */
@@ -637,10 +637,6 @@ header .flex {
   .con-box h1 {
     border-left: 15px solid #92f0c4;
     padding-left: 15px;
-  }
-
-  section img {
-    max-width: 100%;
   }
 
   .con-box {
