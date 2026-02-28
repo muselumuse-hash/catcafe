@@ -938,9 +938,8 @@ aside h1{
   }
 
   #concept .concept-img{
-    height: 250px !important;   /* ← これ重要 */
+    height: 320px !important;   /* ← これ重要 */
   }
-
   
 }
   /*メディアクエリ660閉じ*/
