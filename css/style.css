@@ -839,16 +839,20 @@ header .flex {
   margin-top: 30px;
 }
 
-  /* SNSアイコン中央寄せ */
+/* ===== スマホ：SNS中央完全修正版 ===== */
+
 .sns ul{
   display: flex;
   justify-content: center;
-  padding-left: 0;
+  align-items: center;
+  padding: 0;
+  margin: 0;
 }
 
 .sns li{
+  float: none !important;   /* ← これが超重要 */
   list-style: none;
-  margin: 0 10px;  /* アイコン同士の間隔 */
+  margin: 0 12px;
 }
 
 }
