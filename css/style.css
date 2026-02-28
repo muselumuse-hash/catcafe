@@ -918,8 +918,9 @@ aside h1{
   text-align: center;
 }
 
-   .thumb {
-    width: 200px;   /* ← 好きな大きさに変更OK */
+  .thumb {
+     width: 45%;
+    max-width: none;
     height: auto;
   }
 
