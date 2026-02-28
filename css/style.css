@@ -797,6 +797,7 @@ header .flex {
   float: none;
   width: 92%;
   margin: 0 auto;
+  margin-top: 30px;
   padding: 20px 4%;
   padding-left: 0 !important;
 }
