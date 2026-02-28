@@ -923,6 +923,19 @@ aside h1{
     max-width: none;
     height: auto;
   }
+
+ #concept .flex{
+    flex-direction: column;
+  }
+
+  #concept .column-2{
+    width: 100% !important;
+  }
+
+  .concept-img{
+    height: 250px; /* 好きな高さに調整 */
+  }
+  
 }
   /*メディアクエリ660閉じ*/
 
