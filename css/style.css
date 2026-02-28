@@ -55,6 +55,12 @@ aside a:hover {
   background-color: rgb(247, 199, 240);
 }
 
+/* PC版 肉球サイズ */
+aside li img{
+  width: 30px;
+  height: auto;
+}
+
 
 
 /* font-family: 'Danding Script' , cursive;*/
