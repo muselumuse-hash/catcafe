@@ -924,16 +924,16 @@ aside h1{
     height: auto;
   }
 
- #concept .flex{
-    flex-direction: column;
+#concept .flex{
+    flex-direction: row !important;   /* 横並びに戻す */
   }
 
   #concept .column-2{
-    width: 100% !important;
+    width: 50% !important;           /* 半分ずつ */
   }
 
   .concept-img{
-    height: 250px; /* 好きな高さに調整 */
+    height: 250px;
   }
   
 }
