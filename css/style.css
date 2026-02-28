@@ -21,7 +21,7 @@ aside {
   float: none;
   width: 260px;
   margin: 40px auto;
-  text-align: center;
+  text-align: left;
 }
 aside h1 {
   font-size: 140%;
