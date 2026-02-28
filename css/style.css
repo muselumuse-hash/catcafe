@@ -926,7 +926,7 @@ aside h1{
 }
   /*メディアクエリ660閉じ*/
 
-  /* ===== スマホ用 ===== （メディアクエリ768）*/
+  /* ===== スマホ用 ===== （メディアクエリ768px）*/
 @media screen and (max-width: 768px) {
 
   #bigimg {
@@ -937,7 +937,8 @@ aside h1{
    section ul {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 50px;
+     padding: 0;
   }
 
   .thumb {
