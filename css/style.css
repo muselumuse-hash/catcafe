@@ -901,6 +901,11 @@ aside li img{
   display: block;             /* 余計なズレ防止 */
 }
 
+  /* ご案内タイトル中央 */
+aside h1{
+  text-align: center;
+}
+
 }
 
 /*メディアクエリ660閉じ*/
