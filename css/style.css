@@ -729,8 +729,9 @@ height:auto;
 
   .con-box{
 width:92%;
-margin-left:4%;
+margin-left:0;
 padding:20px;
+float: none;
 }
 
 }
