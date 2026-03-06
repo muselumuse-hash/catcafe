@@ -734,6 +734,17 @@ padding:20px;
 float: none;
 }
 
+  /* 性別横並び */
+.con-box input[type="radio"]{
+width:auto;
+margin-right:5px;
+}
+
+.con-box label[for="male"],
+.con-box label[for="female"]{
+margin-right:15px;
+}
+
 }
 
 /*--------------------------------メディアクエリ480閉じ-------------------------------------------*/
