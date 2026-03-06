@@ -1070,4 +1070,24 @@ gap:10px;
 padding:0;
 }
 
+  /* ======================
+猫紹介ページ サムネイル
+====================== */
+
+/* サムネイル画像 */
+.thumb{
+width:120px;
+height:auto;
+cursor:pointer;
+}
+
+/* サムネイル横並び */
+.center ul{
+display:flex;
+justify-content:center;
+gap:15px;
+padding:0;
+list-style:none;
+}
+
 }
