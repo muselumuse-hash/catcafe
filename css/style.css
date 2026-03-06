@@ -665,6 +665,10 @@ header .flex {
 
   }
 
+  .flex-left{
+flex-direction:row;
+}
+
 
 
 }
