@@ -683,7 +683,38 @@ width:55%;
 width:90px;
 }
 
+  /* ラベル */
+.con-box label{
+font-size:14px;
+font-weight:bold;
+}
 
+/* 入力欄 共通 */
+.con-box input,
+.con-box textarea,
+.con-box select{
+width:100%;
+padding:10px;
+margin-top:5px;
+margin-bottom:15px;
+border:2px solid #2ecc71; /* 入力前は緑 */
+border-radius:8px;
+font-size:14px;
+box-sizing:border-box;
+}
+
+/* 入力中 */
+.con-box input:focus,
+.con-box textarea:focus,
+.con-box select:focus{
+border:2px solid #3399ff;
+outline:none;
+}
+
+/* テキストエリア */
+.con-box textarea{
+height:120px;
+}
 
 /* 送信ボタン中央 */
 .con-box button{
@@ -695,7 +726,7 @@ background:none;
 
 /* 送信ボタン画像 */
 .con-box button img{
-width:110%;
+width:70%;
 max-width:220px;
 height:auto;
 }
