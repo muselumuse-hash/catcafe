@@ -983,20 +983,7 @@ margin-left:0;
      padding: 0;
   }
 
-  .thumb {
-    width: 100%;
-    height: auto;
-  }
-
-   #bigimg {
-    width: 100%;
-    height: auto;
-  }
-
-  .concept-img,
-.concept-img-left {
-  margin: 0 auto;
-}
+  
 
 }
 
