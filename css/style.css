@@ -1,1005 +1,277 @@
-﻿@charset "utf-8";
-
-/* 基本レイアウト ここから↓ */
+@charset "utf-8";
 @import url(common.css);
 
-
-html {
-  font-family: "Noto Sans JP", sans-serif;
-}
-
-
-/*パンくずリスト*/
-.page ol li {
-  display: inline;
-  margin-right: 5px;
-  font-size: 80%;
-}
-
-/*アサイドの所*/
-aside {
-  float: none;
-  width: 260px;
-  margin: 40px auto;
-  text-align: left;
-}
-aside h1 {
-  font-size: 140%;
-  border-bottom: 2px dotted #80BA4a;
-  padding-left: 60px;
-  padding-bottom: 5px;
-  margin: 0;
-
-}
-
-aside li {
-  border-bottom: 1px dotted #80BA4a;
-  list-style-type: none;
-
-}
-
-aside ul {
-  margin: 0;
-}
-
-aside a {
-  font-size: 110%;
-  display: block;
-  text-decoration: none;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 5px;
-}
-
-aside a:hover {
-  background-color: rgb(247, 199, 240);
-}
-
-/* ===== PC版 ご案内アイコン整列 ===== */
-
-aside li a{
-  display: flex;
-  align-items: center;   /* 縦中央揃え */
-  gap: 10px;             /* 画像と文字の間 */
-}
-
-aside li img{
-  width: 30px;
-  flex-shrink: 0;        /* 画像サイズ固定 */
-  display: block;
-}
-
-
-
-/* font-family: 'Danding Script' , cursive;*/
-
-
-
-.pop {
-  font-family: "Mochiy Pop One", sans-serif;
-}
-
-/*.center {
-  width: 90%;
-  max-width: 1200px;
-}
-*/
-
-.flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-nav ul li {
-  list-style-type: none;
-}
-
-/*ヘッダー*/
-header {
-  padding: 2px 0;
-}
-
-.logo {
-  font-size: 24px;
-  font-weight: 700;
-  letter-spacing: -0.04em;
-}
-
-.logo span {
-  color: pink;
-}
-
-.header_menu li {
-  margin-left: 30px;
-
-}
-
-.header_menu li a:hover {
-  color: #80BA4a;
-}
-
-
-.header_menu img {
-  width: 100px;
-  height: auto;
-}
-
-/* ===== heroサイズ安定パッチ ===== */
-
-#hero {
-  height: clamp(260px, 40vw, 540px);
-}
-
-
-
-li a img {
-  transition: opacity 0.3s ease-in-out;
-  /* トランジションでアニメーションを滑らかにします */
-}
-
-li a:hover img {
-  opacity: 0.8;
-  /* ホバー時の透明度を指定します */
-}
-
-/*メイン*/
-#hero {
-  background-image: url(../images/topga1.png);
-  background-position: center;
-  background-size: cover;
-  /* 画像全体に表示 */
-  width: 90%;
-  /* 横幅を画面いっぱいに設定 */
-  border-radius: 30px;
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-  overflow: hidden;
-}
-
-#hero::before {
-  content: '';
-  width: 100%;
-  height: 100%;
-  background-color: #fff;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0.2;
-  z-index: 1;
-}
-
-.hero_inner {
-  z-index: 2;
-  color: #ec2020;
-  width: 100%;
-  text-align: center;
-  background-color: #fff;
-  opacity: 0.5;
-}
-
-.hero_inner p {
-  font-size: 20px;
-  font-weight: 500;
-  margin-bottom: 16px;
-}
-
-.hero_inner h1 {
-  font-size: 32px;
-  font-weight: 700;
-}
-
-/*コンセプト右*/
-#concept {
-  margin-bottom: 120px;
-}
-
-.title {
-  font-size: 20px;
-  font-weight: 500;
-  color: pink;
-  margin-bottom: 40px;
-}
-
-#concept h3 {
-  font-size: 36px;
-  font-weight: 700;
-  margin-bottom: 60px;
-}
-
-.column-2 {
-  width: 48%;
-  line-height: 2em;
-  font-size: 15px;
-  margin-left: 30px;
-  flex: 1;
-}
-
-.kominnka {
-  font-family: "Darumadrop One", sans-serif;
-  font-weight: 700px;
-  font-size: 60px;
-  color: red;
-}
-
-.columu-2_strong {
-  color: red;
-}
-
-.text {
-  line-height: 2;
-}
-
-.concept-img {
-  background-image: url(../images/topga1.png);
-  background-position: center;
-  background-size: cover;
-  /*画像全体に表示*/
-  height: 340px;
-  border-radius: 20px;
-
-}
-
-.heading {
-  font-family: 'Dancing Script', cursive;
-  font-size: 200px;
-  font-weight: 700;
-  color: pink;
-  opacity: 0.2;
-  position: absolute;
-  top: 0;
-  right: 0;
-  transform: translateY(-20%);
-  z-index: -1;
-}
-
-.heading-bottom {
-  font-family: 'Dancing Script', cursive;
-  font-size: 200px;
-  font-weight: 700;
-  color: pink;
-  opacity: 0.2;
-  position: absolute;
-  top: 0;
-  right: 0;
-  transform: translateY(20%);
-  z-index: -1;
-}
-
-.heading-bottom2 {
-  font-family: 'Dancing Script', cursive;
-  font-size: 200px;
-  font-weight: 700;
-  color: pink;
-  opacity: 0.2;
-  position: absolute;
-  top: 0;
-  right: 0;
-  transform: translateY(20%);
-  z-index: -1;
-}
-
-/*メインの下の画像*/
-.links {
-  display: flex;
-  padding: 2rem;
-  gap: 0.5rem;
-  height: 20rem;
-  border-radius: 2rem;
-  margin-bottom: 50px;
-  overflow: hidden;
-  position: relative;
-  opacity: 0.5;
-}
-
-.links a {
-  display: block;
-  flex: 1 1 auto;
-}
-
-.links a img {
-  display: block;
-  border-radius: 50% / 25%;
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
-
-.links a:hover {
-  flex-grow: 4;
-  transition: flex-grow 0.4s ease-in-out;
-}
-
-.container {
-  width: 90%;
-  /* 親コンテナの幅を〇%に設定 */
-  max-width: 1200px;
-  /* 最大幅の制限を解除 */
-  margin: 0 auto;
-  position: relative;
-}
-
-/* flex-left コンテナ左*/
-.flex-left {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.concept-img,
-.concept-img-left {
-  background-size: cover;
-  background-position: center;
-  height: 320px;
-  border-radius: 20px;
-}
-
-.concept-img {
-  background-image: url(../images/topga1.png);
-  background-position: center;
-}
-
-.concept-img-left {
-  background-image: url(../images/topga1.png);
-  /* 左側の画像*/
-  background-position: center;
-  margin-bottom: 100px;
-}
-
-.concept-img-right {
-  background-size: cover;
-  height: 340px;
-  /* 高さ調整 */
-  border-radius: 20px;
-  background-position: center;
-}
-
-.heading2 {
-  font-family: 'Dancing Script', cursive;
-  font-size: 200px;
-  font-weight: 700;
-  color: rgb(102, 235, 124);
-  opacity: 0.1;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: translateY(-35%);
-  z-index: -1;
-
-}
-
-.text-right {
-  text-align: right;
-  margin-right: 40px;
-}
-
-.kominnka2 {
-  font-family: "Darumadrop One", sans-serif;
-  font-weight: 700;
-  font-size: 60px;
-  color: rgb(102, 235, 124);
-}
-
-
-/*箱紹介
-.yokoimg{
-  text-align: center;
-}
-.yokoimg1 li a{
-  float: left;
+/* =====================
+   Base
+===================== */
+html{
+  font-family:"Noto Sans JP",sans-serif;
 }
-*/
-.yokoimg {
-  display: flex;
-  flex-wrap: wrap;
-  /* 項目が多い場合は折り返す */
-  justify-content: space-around;
-  /* アイテム間のスペースを均等にする */
-  list-style-type: none;
-  /* リストマーカーを非表示にする */
-  padding-left: 90px;
-  /* デフォルトのパディングを削除する */
-}
-
-.yokoimg li {
-  margin-bottom: 10px;
-  margin-left: 0px;
-  /* アイテム間に余白を設定 */
-  flex-basis: 25%;
-  /* 各アイテムが容器の約半分の幅を取る */
-}
-
-.yokoimg img {
-  width: 90%;
-  /* 画像がリストアイテムの幅に合わせて伸縮 */
-  height: auto;
-  /* 画像の高さが自動で調整される */
-}
-.pop-plan img:last-of-type {
-  margin-bottom: 60px;  /* ← 好きな余白量に調整 */
-}
-
-.con-box form button {
-  margin-bottom: 60px;
-}
-
-/*sns*/
-.sns {
-  display: block;
-  margin-left: 30px;
-  padding-left: 30px;
-  padding-top: 30px;
-}
-
-.sns li {
-  float: left;
-  padding-left: 30px;
-}
-
-/*会社概要*/
-.con-box h3 {
-  border-bottom: 1px dotted pink;
-  border-left: 15px solid #92f0c4;
-}
-
-.con-box h2 {
-  border-bottom: 1px dotted pink;
-  border-left: 15px solid #92f0c4;
-}
-
-.con-box {
-  padding-left: 100px;
-  padding-top: 100px;
-  margin-bottom: 60px;
-}
-
-/*フッター*/
-
-#toppage {
-  text-align-last: right;
-  padding-left: 10px;
-  margin-right: 100px;
-  margin-bottom: 2px;
-  clear: both;
-
-}
-
-#boder {
-  border-bottom: 2px solid pink;
-}
-
-#footer-map {
-  margin-top: 30px;
-  margin-left: 100px;
-  text-decoration: center;
-
-}
-
-#copyright {
-  text-align: center;
-  margin-right: 30px;
-}
-
-footer {
-  clear: both;
-}
-
-/*ここは紹介*/
-.con-box h1 {
-  border-left: 15px solid #92f0c4;
-  padding-left: 15px;
-}
-
-section img {
-  max-width: 100%;
-}
-
-.con-box {
-  float: left;
-  margin-left: 300px;
-}
-
-.center {
-  margin: 0 auto 0 auto;
-  max-width: 90%;
-  width: 100%;
-}
-
-.center ul {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-.center ul li {
-  flex: 1 1 auto;
-  margin-right: 8px;
-}
-
-.center ul li:last-of-type {
-  margin-right: 0;
-}
-
-.img_comment {
-  margin-left: 100px;
-}
-
-/* ===== 画像はみ出し防止 ===== */
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* ===== ヘッダー横並び固定 ===== */
-header .flex {
-  flex-wrap: nowrap !important;
-}
-
-/* ===== メニュー画像サイズ安定 ===== */
-.header_menu img {
-  width: 100px;
-  height: auto;
-}
-
-/* ===== ヘッダーメニューを常に横並びに固定 ===== */
-
-header .flex {
-  flex-direction: row !important;
-  flex-wrap: nowrap !important;
-}
-
-.header_menu {
-  display: flex !important;
-  flex-direction: row !important;
-  gap: 30px;
-}
-
-.concept-img{
-  background-image: url(../images/topga1.png) !important;
-  background-size: cover;
-  background-position: center;
-  height: 320px;
-}
-
-#concept .concept-img{
-  height: 320px !important;
-}
 
-
-/*------------------------------------@メディアクエリ４８０----------------------------------*/
-@media screen and (max-width: 480px) {
-
-  /* コンテナの幅を100%に設定し、余白を1remに設定 */
-  .container {
-    width: 100%;
-    padding: 1rem;
-  }
-
-  /* フレックス方向を列に変更し、アイテムを左揃えに設定 */
-  .flex {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .header_menu {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 12px;
-    width: 100%;
-  }
-
-  .header_menu li {
-    margin: 0;
-    text-align: center;
-    background: #ffffff;
-    border-radius: 16px;
-    padding: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
-  }
-
-  .header_menu a {
-    display: block;
-    font-size: 14px;
-  }
-
-  .header_menu img {
-    width: 70px !important;
-    height: auto;
-    display: block;
-    margin: 0 auto 6px;
-  }
-
-  /*ヘッダーメニューをフレックスボックスレイアウトに変更。
-メニュー項目を縦方向に並べます。
-メニュー項目を左揃えにします。
-これにより、スマホサイズではヘッダーメニューが縦に並び、
-左揃えする。*/
-  .header_menu li {
-    margin: 0;
-  }
-
-  #hero {
-    height: 240px;
-  }
-
-  #hero::before {
-    position: absolute
-  }
-
-
-  .hero_inner p {
-    font-size: 14px;
-  }
-
-  .con-box h1 {
-    border-left: 15px solid #92f0c4;
-    padding-left: 15px;
-  }
-
-  .con-box {
-    float: none;
-    margin-left: 0;
-  }
-
-  .container {
-    width: 90%;
-    max-width: 1220px;
-    margin: 0 auto;
-    position: relative;
-  }
-
-  .flex {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-
-  }
-
-
-
-}
-
-/*--------------------------------メディアクエリ480閉じ-------------------------------------------*/
-
-/*--------------------------------メディアクエリ600始まり-----------------------------*/
-
-@media screen and (max-width: 600px) {
-
-  .con-box {
-    float: none;
-    margin-left: 0;
-    width: 70%;
-    padding-left: 50px;
-    padding-top: 5px;
-  }
-
-  .container {
-    width: 90%;
-    max-width: 1220px;
-    margin: 0 auto;
-    position: relative;
-  }
-
-  .flex {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-left: 0;
-
-  }
-
-
-  #toppage {
-    margin-right: 15px;
-    padding-top: 10px;
-  }
-
-  /*インデックスの４つの箱*/
-
-  .yokoimg li {
-    margin-bottom: 10px;
-    padding-left: 0px;
-    /* アイテム間に余白を設定 */
-    flex-basis: 50%;
-    /* 各アイテムが容器の約半分の幅を取る */
-  }
-
-  /* ===== スマホ：ヘッダーを縦並びにする ===== */
-
-
-  /* ロゴとメニューの間に余白 */
-  .logo {
-    margin-bottom: 16px;
-  }
-
-
-  /* メニューを2列グリッド */
-  .header_menu {
-    display: grid !important;
-    grid-template-columns: 1fr 1fr !important;
-    gap: 12px;
-    width: 100%;
-    padding: 0;
-  }
-
-  /* カード風に */
-  .header_menu li {
-    margin: 0 !important;
-    text-align: center;
-    background: #ffffff;
-    border-radius: 14px;
-    padding: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
-  }
-
-
-  /* ===== スマホメニュー最終強制上書き ===== */
-
-  .header_menu {
-    display: grid !important;
-    grid-template-columns: 1fr 1fr !important;
-    gap: 14px;
-    width: 100%;
-  }
-
-  .header_menu.flex {
-    display: grid !important;
-    grid-template-columns: 1fr 1fr !important;
-  }
-
-  .header_menu li {
-    margin: 0 !important;
-    text-align: center;
-  }
-
-  .flex-left {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 12px;
-  }
-
-  #concept-left .column-2 {
-    width: 50% !important;
-  }
-
-  .concept-img-left {
-    height: 300px;
-    margin-top: 90px;
-  }
-
-  .column-2 {
-    width: 50% !important;
-  }
-
-    /* ナビ全体をロゴ下に */
-    header nav {
-      width: 100%;
-    }
-  
-    header .flex {
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .company-page .con-box{
-      float: none;
-      width: 92%;
-      margin: 0 auto;
-      padding: 20px 4%;
-    }
-  .company-page .con-box{
-  padding-left: 0 !important;
-}
-    .company-page aside{
-      float: none;
-      padding-right: 0;
-      margin-top: 60px;
-      width: 90%;
-    }
-/* 料金ページ スマホ用 */
-
-.con-box.pop-plan{
-  float: none;
-  width: 92%;
-  margin: 0 auto;
-  padding: 20px 4%;
-  padding-left: 0 !important;
-}
-
-/* 画像を画面幅に合わせる */
-.con-box.pop-plan img{
-  width: 100% !important;
-  height: auto;
-}
-  /* 料金ページ：スマホ余白調整 */
-
-.con-box.pop-plan h1{
-  margin-bottom: 30px;   /* 見出しと1枚目画像の間を広げる */
+img{
+  max-width:100%;
+  height:auto;
 }
 
-.con-box.pop-plan img{
-  margin-bottom: 40px;   /* 画像と次の要素の間を広げる */
+.container{
+  width:90%;
+  max-width:1200px;
+  margin:0 auto;
+  position:relative;
 }
-  /* プライバシーポリシー スマホ用 */
 
-.company-page .con-box{
-  float: none;
-  width: 92%;
-  margin: 0 auto;
-  padding: 20px 4%;
-  padding-left: 0 !important;
+.flex{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:20px;
 }
 
-/* 文章が端にくっつかないように */
-.company-page .con-box p{
-  line-height: 1.8;
+/* =====================
+   Header
+===================== */
+header{
+  padding:2px 0;
 }
 
-/* 見出しの余白 */
-.company-page .con-box h1{
-  margin-bottom: 30px;
+.logo{
+  font-size:24px;
+  font-weight:700;
+  letter-spacing:-0.04em;
 }
 
-.company-page .con-box h2{
-  margin-top: 30px;
+.logo span{
+  color:pink;
 }
-
-/* ===== スマホ：SNS完全中央 ===== */
 
-footer {
-  text-align: center;
+.header_menu{
+  display:flex;
+  gap:30px;
 }
 
-.sns {
-  width: 100%;
-  margin: 30px auto;
-  padding: 0 !important;
+.header_menu li{
+  list-style:none;
 }
 
-.sns ul {
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center;
-  gap: 20px;
-  padding: 0;
-  margin: 0;
+.header_menu img{
+  width:100px;
+  height:auto;
 }
 
-.sns li {
-  float: none !important;
-  list-style: none;
+.header_menu li a:hover{
+  color:#80BA4a;
 }
 
-  /* ===== フッターメニューだけ左寄せ ===== */
-
-#footer-map{
-  text-align: left;
-  width: 92%;
-  margin: 0 auto;
+/* =====================
+   Hero
+===================== */
+#hero{
+  position:relative;
+  height:clamp(260px,40vw,540px);
+  background:url(../images/topga1.png) center/cover no-repeat;
+  border-radius:30px;
+  display:flex;
+  align-items:center;
+  margin-bottom:10px;
+  overflow:hidden;
 }
 
-#footer-map p{
-  margin: 8px 0;
+#hero::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:#fff;
+  opacity:.2;
 }
-
-  /* ===== ご案内アイコン整列 ===== */
 
-aside ul{
-  padding: 0;
+.hero_inner{
+  position:relative;
+  z-index:2;
+  width:100%;
+  text-align:center;
+  background:#fff;
+  opacity:.5;
+  color:#ec2020;
 }
 
-aside li{
-  list-style: none;
-  margin: 12px 0;
+.hero_inner p{
+  font-size:20px;
+  margin-bottom:16px;
 }
 
-aside li a{
-  display: flex;              /* 横並びにする */
-  align-items: center;        /* 縦中央揃え */
-  gap: 10px;                  /* 画像と文字の間隔 */
-  text-decoration: none;
+.hero_inner h1{
+  font-size:32px;
 }
 
-aside li img{
-  width: 30px;
-  height: 30px;
-  display: block;             /* 余計なズレ防止 */
+/* =====================
+   Concept
+===================== */
+#concept{
+  margin-bottom:120px;
 }
 
-  /* ご案内タイトル中央 */
-aside h1{
-  text-align: center;
+.column-2{
+  width:48%;
+  line-height:2;
+  font-size:15px;
+  margin-left:30px;
+  flex:1;
 }
-
-  .thumb {
-     width: 45%;
-    max-width: none;
-    height: auto;
-  }
-
- #concept .flex{
-    flex-direction: row !important;   /* 上だけ横並びに戻す */
-  }
-
-  #concept .column-2{
-    width: 50% !important;
-  }
-
-  #concept .concept-img{
-    height: 320px !important;   /* ← これ重要 */
-  }
 
-  .flex-left{
-  flex-direction: column;
-  align-items: center;
+.flex-left{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
 }
 
 .concept-img,
 .concept-img-left{
-  width: 90%;
-  margin: 0 auto;
+  background:url(../images/topga1.png) center/cover no-repeat;
+  height:320px;
+  border-radius:20px;
 }
 
-  .column-2{
-width:100%;
-margin-left:0;
+.concept-img-left{
+  margin-bottom:100px;
 }
 
-   .concept-img,
-  .concept-img-left {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
+/* =====================
+   Gallery links
+===================== */
+.links{
+  display:flex;
+  padding:2rem;
+  gap:.5rem;
+  height:20rem;
+  border-radius:2rem;
+  margin-bottom:50px;
+  overflow:hidden;
+  position:relative;
+  opacity:.5;
 }
-  /*-------------------------------------メディアクエリ660閉じ-----------------------------*/
 
-  /*------------------------------ ===== スマホ用 ===== （メディアクエリ768px）-------------*/
-@media screen and (max-width: 768px) {
+.links a{
+  flex:1 1 auto;
+}
 
-  #bigimg {
-    width: 100%;
-    height: auto;
+.links a img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  border-radius:50%/25%;
+}
+
+.links a:hover{
+  flex-grow:4;
+  transition:flex-grow .4s ease;
+}
+
+/* =====================
+   Side menu
+===================== */
+aside{
+  width:260px;
+  margin:40px auto;
+}
+
+aside h1{
+  font-size:140%;
+  border-bottom:2px dotted #80BA4a;
+  padding-left:60px;
+}
+
+aside ul{
+  margin:0;
+  padding:0;
+}
+
+aside li{
+  list-style:none;
+  border-bottom:1px dotted #80BA4a;
+}
+
+aside li a{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  text-decoration:none;
+  padding:10px 5px;
+}
+
+aside li img{
+  width:30px;
+  flex-shrink:0;
+}
+
+aside a:hover{
+  background:rgb(247,199,240);
+}
+
+/* =====================
+   Footer
+===================== */
+footer{
+  clear:both;
+}
+
+#copyright{
+  text-align:center;
+}
+
+/* =====================
+   Responsive
+===================== */
+
+@media (max-width:600px){
+
+  .flex{
+    flex-direction:column;
+    align-items:flex-start;
   }
 
-   section ul {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-     padding: 0;
-  }
-
-  .thumb {
-    width: 100%;
-    height: auto;
-  }
-
-   #bigimg {
-    width: 100%;
-    height: auto;
+  .flex-left{
+    justify-content:center;
   }
 
   .concept-img,
-.concept-img-left {
-  margin: 0 auto;
-}
+  .concept-img-left{
+    width:90%;
+    margin:auto;
+  }
+
+  .column-2{
+    width:100%;
+    margin-left:0;
+  }
 
 }
 
-  /* -----------------------===== スマホ用 ===== （メディアクエリ768閉じ）------------------------*/
+@media (max-width:480px){
 
+  .header_menu{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:12px;
+    width:100%;
+  }
 
+  .header_menu li{
+    text-align:center;
+    background:#fff;
+    border-radius:16px;
+    padding:8px;
+    box-shadow:0 4px 8px rgba(0,0,0,.12);
+  }
+
+  .header_menu img{
+    width:70px;
+    margin:0 auto 6px;
+    display:block;
+  }
+
+  #hero{
+    height:240px;
+  }
+
+}
