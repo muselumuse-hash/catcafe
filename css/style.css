@@ -726,8 +726,8 @@ background:none;
 
 /* 送信ボタン画像 */
 .con-box button img{
-width:70%;
-max-width:220px;
+width:90%;
+max-width:320px;
 height:auto;
 }
 
