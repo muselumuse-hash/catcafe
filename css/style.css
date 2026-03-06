@@ -1012,6 +1012,13 @@ gap:10px;
 .links{
 height:140px;
 }
+
+  .concept-img img,
+.concept-img-left img{
+width:100%;
+height:auto;
+display:block;
+}
   
   
 
