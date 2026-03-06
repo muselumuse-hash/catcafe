@@ -683,6 +683,16 @@ width:55%;
 width:90px;
 }
 
+  .con-box input,
+.con-box textarea,
+.con-box select{
+border:2px solid #4da6ff;
+border-radius:6px;
+padding:8px;
+width:100%;
+box-sizing:border-box;
+}
+
 
 }
 
