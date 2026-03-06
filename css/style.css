@@ -665,8 +665,18 @@ header .flex {
 
   }
 
-  .flex-left{
+.flex-left{
+display:flex;
 flex-direction:row;
+align-items:center;
+}
+
+.concept-img-left{
+width:45%;
+}
+
+.column-2{
+width:55%;
 }
 
 
