@@ -941,6 +941,17 @@ aside h1{
   #concept .concept-img{
     height: 320px !important;   /* ← これ重要 */
   }
+
+  .flex-left{
+  flex-direction: column;
+  align-items: center;
+}
+
+.concept-img,
+.concept-img-left{
+  width: 90%;
+  margin: 0 auto;
+}
   
 }
   /*-------------------------------------メディアクエリ660閉じ-----------------------------*/
