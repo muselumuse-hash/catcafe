@@ -134,7 +134,7 @@ header {
 /* ===== heroサイズ安定パッチ ===== */
 
 #hero {
-  height: clamp(260px, 40vw, 520px);
+  height: clamp(260px, 40vw, 540px);
 }
 
 
@@ -155,7 +155,6 @@ li a:hover img {
   background-position: center;
   background-size: cover;
   /* 画像全体に表示 */
-  height: 540px;
   width: 90%;
   /* 横幅を画面いっぱいに設定 */
   border-radius: 30px;
