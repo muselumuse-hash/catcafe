@@ -978,34 +978,23 @@ margin-left:0;
   /*-------------------------------------メディアクエリ660閉じ-----------------------------*/
 
   /*------------------------------ ===== スマホ用 ===== （メディアクエリ768px）-------------*/
-@media screen and (max-width: 768px) {
 
-  #bigimg {
-    width: 100%;
-    height: auto;
-  }
+@media screen and (max-width:768px){
 
-   section ul {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-     padding: 0;
-  }
-
-
-  /*----------------------------*/
-
-  .flex,
-.flex-left{
-flex-direction:column;
-}
-
-.column-2,
-.concept-img,
-.concept-img-left{
+/* 画像 */
+#bigimg{
 width:100%;
+height:auto;
 }
 
+/* ヘッダーメニュー */
+.header_menu{
+flex-direction:column;
+gap:10px;
+align-items:center;
+}
+
+/* HERO */
 #hero{
 height:260px;
 }
@@ -1018,32 +1007,67 @@ font-size:22px;
 font-size:16px;
 }
 
-  .header_menu{
+/* 基本flex */
+.flex{
 flex-direction:column;
+}
+
+/* 画像左＋文章右はスマホでも維持 */
+.flex-left{
+display:flex;
+flex-direction:row;
+align-items:center;
 gap:10px;
 }
 
+/* カラム幅 */
+.column-2{
+width:100%;
+}
+
+/* 左画像 */
+.flex-left .concept-img-left{
+width:45%;
+}
+
+/* 右文章 */
+.flex-left .column-2{
+width:55%;
+}
+
+/* 右画像ブロック */
+.concept-img{
+width:100%;
+}
+
+/* リンクアイコン */
 .links{
 height:140px;
 }
 
-  .concept-img-left{
-width:100%;
-height:300px;
-background-size:cover;
-background-position:center;
-margin-top:20px;
-}
-
-  .flex-left{
+/* SNS */
+.sns ul{
 display:flex;
-flex-direction:column;
-}
-  
-  
-
+justify-content:center;
+gap:15px;
+padding:0;
 }
 
-  /* -----------------------===== スマホ用 ===== （メディアクエリ768閉じ）------------------------*/
+/* 横メニュー */
+.yokoimg{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:10px;
+padding:0;
+}
 
+/* UL調整 */
+section ul{
+display:flex;
+justify-content:center;
+gap:10px;
+padding:0;
+}
 
+}
