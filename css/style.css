@@ -645,11 +645,7 @@ header .flex {
     padding-left: 15px;
   }
 
-  .con-box {
-    float: none;
-    margin-left: 0;
-  }
-
+ 
   .container {
     width: 90%;
     max-width: 1220px;
@@ -731,6 +727,11 @@ max-width:320px;
 height:auto;
 }
 
+  .con-box{
+width:92%;
+margin-left:4%;
+padding:20px;
+}
 
 }
 
