@@ -1131,6 +1131,7 @@ list-style:none;
      こみんか節＝画像が右、住み家節＝画像が左（DOM順どおり） */
   #concept .flex,
   #concept-left .flex-left {
+    flex-direction: row;
     flex-wrap: nowrap;
     gap: 14px;
   }
