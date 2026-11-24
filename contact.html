@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
@@ -33,50 +33,16 @@
     </div>
     <main class="company-page">
         <div class="con-box">
-            <h1>お問い合わせ・予約フォーム</h1>
-            <form action="/submit-your-form-handler" method="POST">
-                <div>
-                    <label for="name">お名前　(必須)</label><br>
-                    <input type="text" id="name" name="name" required placeholder="名前（必須）">
+            <h1>お問い合わせ・ご予約</h1>
+            <div class="line-contact" style="text-align:center; padding: 10px 0 20px;">
+                    <p style="line-height:1.9;">お問い合わせ・ご予約は <strong>LINE</strong> で受け付けています。<br>
+                    下のボタンから友だち追加をして、トークで<br>
+                    「お名前・ご希望の日時・人数・お問い合わせ内容」を送ってください。</p>
+                    <p style="margin: 22px 0;">
+                        <a href="https://line.me/R/ti/p/@394ryqie" target="_blank" rel="noopener" style="display:inline-block; background:#06C755; color:#ffffff; font-weight:bold; font-size:20px; text-decoration:none; padding:16px 42px; border-radius:999px; box-shadow:0 3px 8px rgba(0,0,0,0.25);">LINEで問い合わせる</a>
+                    </p>
+                    <p style="font-size:13px; color:#666;">※ボタンが開かない場合は、LINEで「@394ryqie」を検索して友だち追加してください。</p>
                 </div>
-                <div>
-                    <label for="phone">電話番号（必須）</label><br>
-                    <input type="tel" id="phone" name="phone" required placeholder="電話（必須）"><br><br>
-                    <label for="contactType">連絡方法を選択してください：</label>
-                    <select id="contactType" name="contactType" required>
-                        <option value="email">メール</option>
-                        <option value="line">LINE</option>
-                    </select>
-                </div>
-                <div>
-                    <label for="email">メールアドレス</label><br>
-                    <input type="email" id="email" name="email" placeholder="example@example.com">
-                </div>
-                <div>
-                    <label for="line">LINE ID</label><br>
-                    <input type="text" id="line" name="line" placeholder="LINE ID">
-                </div>
-                <div>
-                    <label>性別：</label>
-                    <input type="radio" id="male" name="gender" value="male" required>
-                    <label for="male">男性</label>
-                    <input type="radio" id="female" name="gender" value="female" required>
-                    <label for="female">女性</label>
-                </div><br>
-                <div>
-                    <label for="number">人数（必須）：</label>
-                    <input type="number" id="number" name="number" min="1" max="10" required placeholder="必須">
-                </div>
-                <div>
-                    <label for="date">訪問日：</label>
-                    <input type="date" id="date" name="date" required>
-                </div>
-                <div>
-                    <label for="inquiry"><br>お問い合わせ内容</label><br>
-                    <textarea id="inquiry" name="inquiry" rows="4" cols="50"></textarea>
-                </div><br>
-                <button type="submit"><img src="images/submit.jpg" alt="送信ボタン" width="300px"></button>
-            </form>
         </div><!-- /.con-box -->
   
     <aside>
